@@ -40,7 +40,7 @@ const Navbar = () => {
         ;
     }
     return (
-        <div className="container mx-auto px-4">
+        <div>
             {/*Navbar*/}
             <div className="flex justify-between items-center py-4">
                 <div className="flex space-x-4">
@@ -58,12 +58,12 @@ const Navbar = () => {
                             </a>
                             {itDropdownOpen && (
                                 <div className='dropdown-menu bg-white mt-2 p-2 rounded shadow'>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone</a>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone</a>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone1</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 1</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 2</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 3</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 4</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 5</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">See More...</a>
                                 </div>
                             )}
                         </div>
@@ -80,12 +80,12 @@ const Navbar = () => {
                             </a>
                             {graphicDesignDropdownOpen && (
                                 <div className='dropdown-menu bg-white mt-2 p-2 rounded shadow'>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone</a>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone</a>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone1</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 1</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 2</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 3</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 4</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 5</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">See More...</a>
                                 </div>
                             )}
                         </div>
@@ -102,12 +102,12 @@ const Navbar = () => {
                             </a>
                             {marketingDropdownOpen && (
                                 <div className='dropdown-menu bg-white mt-2 p-2 rounded shadow'>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone</a>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone</a>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone1</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 1</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 2</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 3</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 4</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 5</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">See More...</a>
                                 </div>
                             )}
                         </div>
@@ -124,19 +124,19 @@ const Navbar = () => {
                             </a>
                             {companyDropdownOpen && (
                                 <div className='dropdown-menu bg-white mt-2 p-2 rounded shadow'>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone</a>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone</a>
-                                    <a className="block text-gray-700 hover:text-gray-900">Hello
-                                        everyone1</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Company 1</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Company 2</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Company 3</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Company 4</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">Company 5</a>
+                                    <a className="block text-gray-700 hover:text-gray-900 font-bold">See More...</a>
                                 </div>
                             )}
                         </div>
                     </div>
                 </div>
                 <div className="flex space-x-2">
-                    <input className="px-3 py-2 border border-gray-300" placeholder="search" type="text"/>
+                    <input className="px-3 py-2 border border-gray-300" placeholder="Search" type="text"/>
                     <button className="button button-login">Login</button>
                     <button className="button button-register">Register</button>
                 </div>

@@ -15,6 +15,7 @@ const Body = () => {
                                  width="200"/>
                         </div>
 
+                        {/*COURE*/}
                         <div className="bg-fuchsia-100 p-4">
                             <h2 className="text-xl font-bold mb-4 text-gray-700">
                                 COURSE
@@ -61,6 +62,7 @@ const Body = () => {
                     </div>
                 </div>
 
+                {/*Main*/}
                 <div className="w-1/2 px-4">
                     {/*Image Main*/}
                     <div className="bg-amber-100 p-4 mb-4">
@@ -93,7 +95,15 @@ const Body = () => {
                              src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51kSny3PWYS.jpg"
                              width="200"/>
                         <p className="text-gray-700 w-2/3">
-                            context
+                            <b>Target audience:</b>Everyone
+                            <br/>
+                            <b>Content: </b>You will know the Python programming language even if you know
+                            nothing about programming.
+                            <br/>
+                            <b>Result: </b>You will be able to carry out basic projects or solve algorithms
+                            easily using the Python programming language.
+                            <br/>
+                            <b>Price: </b>Free
                         </p>
                     </div>
                     <div className="bg-amber-200 p-4 mb-4 flex">
@@ -102,7 +112,15 @@ const Body = () => {
                              src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51jS9FBDy8L.jpg"
                              width="200"/>
                         <p className="text-gray-700 w-2/3">
-                            context
+                            <b>Target audience:</b>Everyone
+                            <br/>
+                            <b>Content: </b>You will know the Python programming language even if you know
+                            nothing about programming.
+                            <br/>
+                            <b>Result: </b>You will be able to carry out basic projects or solve algorithms
+                            easily using the Python programming language.
+                            <br/>
+                            <b>Price: </b>Free
                         </p>
                     </div>
                 </div>

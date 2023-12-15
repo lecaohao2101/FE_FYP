@@ -4,6 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
 
 }
+
 /* Thêm vào file HomePage.css */
 .dropdown {
     position: relative;
@@ -22,7 +23,7 @@ body {
     font-size: 14px;
     text-align: left;
     list-style: none;
-    background-color: rgba(255, 255, 255, 0.1); /* Màu nền mờ nhạt */
+    background-color: rgba(208, 197, 197, 0); /* Màu nền mờ nhạt */
     border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -51,7 +52,6 @@ body {
     background-color: #2196f3; /* Màu nền cho nút Register */
     color: white;
 }
-
 
 
 /* Add your additional styles here */
