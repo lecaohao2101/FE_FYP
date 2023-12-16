@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-gray-100 {
+    background-color: #f7fafc;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.border {
+    border: 1px solid #e2e8f0;
+}
+
+.border-gray-300 {
+    border-color: #cbd5e0;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-md {
+    max-width: 28rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.bg-gray-300 {
+    background-color: #a0aec0;
+}
+
+.hover\:text-gray-300:hover {
+    color: #718096;
+}
+
+.hover\:bg-blue-500:hover {
+    background-color: #2d3748;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.hover\:text-white:hover {
+    color: #ffffff;
+}
+
+.hover\:bg-blue-600:hover {
+    background-color: #4a5568;
+}
+
+.text-gray-700 {
+    color: #4a5568;
+}
+
+.text-gray-600 {
+    color: #4a5568;
+}
+
+.hover\:text-gray-900:hover {
+    color: #1a202c;
+}
+
+.focus\:outline-none:focus {
+    outline: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Add your additional styles here */

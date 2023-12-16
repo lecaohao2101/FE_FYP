@@ -1,12 +1,14 @@
-// HomePage.js
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import './HomePage.css'
 import Navbar from "./Navbar";
 import Body from "./Body";
 import Footer from "./Footer";
 
-
 const HomePage = () => {
+    useEffect(() => {
+        document.title = 'Course of University';
+    }, []);
+
     return (
         <div class='bg-amber-100'>
             <div class='px-4 bg-blue-100 sm:bg-gray-100 md:bg-green-300'><Navbar/></div>
@@ -15,5 +17,4 @@ const HomePage = () => {
         </div>
     );
 };
-
 export default HomePage;
