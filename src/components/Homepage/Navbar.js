@@ -1,44 +1,18 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import './HomePage.css'
 
 
 const Navbar = () => {
-    const [itDropdownOpen, setItDropdownOpen] = useState(false);
-    const [graphicDesignDropdownOpen, setGraphicDesignDropdownOpen] = useState(false);
-    const [marketingDropdownOpen, setMarketingDropdownOpen] = useState(false);
-    const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
-    const toggleDropdown = (dropdownName) => {
-        switch (dropdownName) {
-            case 'it':
-                setItDropdownOpen(!itDropdownOpen);
-                setGraphicDesignDropdownOpen(false);
-                setMarketingDropdownOpen(false);
-                setCompanyDropdownOpen(false);
-                break;
-            case 'graphicDesign':
-                setItDropdownOpen(false);
-                setGraphicDesignDropdownOpen(!graphicDesignDropdownOpen);
-                setMarketingDropdownOpen(false);
-                setCompanyDropdownOpen(false);
-                break;
-            case 'marketing':
-                setItDropdownOpen(false);
-                setGraphicDesignDropdownOpen(false);
-                setMarketingDropdownOpen(!marketingDropdownOpen);
-                setCompanyDropdownOpen(false);
-                break;
-            case 'company':
-                setItDropdownOpen(false);
-                setGraphicDesignDropdownOpen(false);
-                setMarketingDropdownOpen(false);
-                setCompanyDropdownOpen(!companyDropdownOpen);
-                break;
-            default:
-                break;
-        }
-        ;
-    }
+    const [activeDropdown, setActiveDropdown] = useState(null);
+
+    const toggleDropdown = (dropdown) => {
+        setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+    };
+
+    const closeDropdown = () => {
+        setActiveDropdown(null);
+    };
     return (
         <div className="flex justify-between items-center py-4">
             <div className="flex space-x-4">
@@ -50,11 +24,11 @@ const Navbar = () => {
                     <div className="relative">
                         <a
                             className="px-3 py-2 text-gray-700 hover:text-gray-900 cursor-pointer font-bold mb-4"
-                            onClick={() => toggleDropdown('it')}
+                            onMouseEnter={() => toggleDropdown('it')}
                         >
                             Information Technology
                         </a>
-                        {itDropdownOpen && (
+                        {activeDropdown && (
                             <div className='dropdown-menu bg-white mt-2 p-2 rounded shadow'>
                                 <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 1</a>
                                 <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 2</a>
@@ -72,11 +46,11 @@ const Navbar = () => {
                     <div className="relative">
                         <a
                             className="px-3 py-2 text-gray-700 hover:text-gray-900 cursor-pointer font-bold mb-4"
-                            onClick={() => toggleDropdown('graphicDesign')}
+                            onMouseEnter={() => toggleDropdown('graphicDesign')}
                         >
                             Graphic Design
                         </a>
-                        {graphicDesignDropdownOpen && (
+                        {activeDropdown && (
                             <div className='dropdown-menu bg-white mt-2 p-2 rounded shadow'>
                                 <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 1</a>
                                 <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 2</a>
@@ -94,11 +68,11 @@ const Navbar = () => {
                     <div className="relative">
                         <a
                             className="px-3 py-2 text-gray-700 hover:text-gray-900 cursor-pointer font-bold mb-4"
-                            onClick={() => toggleDropdown('marketing')}
+                            onMouseEnter={() => toggleDropdown('marketing')}
                         >
                             Maketing
                         </a>
-                        {marketingDropdownOpen && (
+                        {activeDropdown && (
                             <div className='dropdown-menu bg-white mt-2 p-2 rounded shadow'>
                                 <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 1</a>
                                 <a className="block text-gray-700 hover:text-gray-900 font-bold">Subject 2</a>
@@ -116,11 +90,11 @@ const Navbar = () => {
                     <div className="relative">
                         <a
                             className="px-3 py-2 text-gray-700 hover:text-gray-900 cursor-pointer font-bold mb-4"
-                            onClick={() => toggleDropdown('company')}
+                            onMouseEnter={() => toggleDropdown('company')}
                         >
                             Company
                         </a>
-                        {companyDropdownOpen && (
+                        {activeDropdown && (
                             <div className='dropdown-menu bg-white mt-2 p-2 rounded shadow'>
                                 <a className="block text-gray-700 hover:text-gray-900 font-bold">Company 1</a>
                                 <a className="block text-gray-700 hover:text-gray-900 font-bold">Company 2</a>
@@ -136,13 +110,8 @@ const Navbar = () => {
 
             <div className="flex space-x-2">
                 <input className="px-3 py-2 border border-gray-300" placeholder="Search" type="text"/>
-                <Link to="/login" className="button button-login">
-                    Login
-                </Link>
-
-                <Link to="/register" className="button button-login">
-                    Register
-                </Link>
+                <Link to="/login" className="button button-login">Login</Link>
+                <Link to="/register" className="button button-register">Register</Link>
             </div>
         </div>
     );

@@ -15,7 +15,7 @@ const Body = () => {
                     </div>
 
                     <div className="bg-fuchsia-100 p-4">
-                        <h2 className="text-xl font-bold mb-4 text-gray-700">COURSE</h2>
+                        <h2 className="text-xl font-bold mb-4 text-gray-700">CARRER</h2>
 
                         {/*IT*/}
                         <div className="mb-4">

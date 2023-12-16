@@ -1,11 +1,7 @@
-/* HomePage.css */
-
 body {
     font-family: 'Arial', sans-serif;
-
 }
 
-/* Thêm vào file HomePage.css */
 .dropdown {
     position: relative;
 }
@@ -23,7 +19,7 @@ body {
     font-size: 14px;
     text-align: left;
     list-style: none;
-    background-color: rgba(208, 197, 197, 0); /* Màu nền mờ nhạt */
+    background-color: rgba(208, 197, 197, 0);
     border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -35,7 +31,6 @@ body {
     display: block;
 }
 
-/* Thêm vào file HomePage.css */
 .button {
     padding: 8px 16px;
     border: none;
@@ -44,14 +39,12 @@ body {
 }
 
 .button-login {
-    background-color: #4caf50; /* Màu nền cho nút Login */
+    background-color: #3499d0;
     color: white;
 }
 
 .button-register {
-    background-color: #2196f3; /* Màu nền cho nút Register */
+    background-color: #4caf50;
     color: white;
 }
 
-
-/* Add your additional styles here */

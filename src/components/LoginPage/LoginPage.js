@@ -10,6 +10,8 @@ const LoginPage = () => {
     return (
         <div className="h-screen w-full flex items-center justify-center">
             <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  p-10 shadow-lg min-h-full md:min-w-0 md:w-1/2">
+                <Link to="/"><i className="fas fa-arrow-alt-circle-left text-gray-400 mr-2"></i></Link>
+
                 <h1 className="text-4xl font-bold mb-2 text-center">LOGIN</h1>
                 <br/>
                 <p className="text-white-700 mb-8">How to get started Course Online of University at?
@@ -38,22 +40,22 @@ const LoginPage = () => {
                     </div>
 
                 </div>
-                <button
-                    className="mt-8 mb-4 bg-blue-500 text-white py-2 px-6 rounded-full w-full hover:bg-blue-700 transition duration-300 ease-in-out">Login
-                    Now
-                </button>
+                <button className="mt-8 mb-4 bg-blue-500 text-white py-2 px-6 rounded-full w-full hover:bg-blue-700 transition duration-300 ease-in-out">Login Now</button>
                 <p className="text-center mb-4 font-bold">----------Login with Others----------</p>
+
                 <div className="flex flex-col space-y-4">
                     <button
                         className="flex items-center justify-center border-2 py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out">
                         <i className="fab fa-google text-red-500 mr-2"></i>
                         Login with Google
                     </button>
+
                     <button
                         className="flex items-center justify-center border-2 py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out">
                         <i className="fab fa-facebook text-blue-600 mr-2"></i>
                         Login with Facebook
                     </button>
+
                     <button
                         className="flex items-center justify-center border-2 py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out">
                         <i className="fab fa-github text-blue-1000 mr-2"></i>

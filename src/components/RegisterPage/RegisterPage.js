@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import loginImage from "./images/register.jpg";
 import {Link} from "react-router-dom";
 
 const RegisterPage = () => {
+    useEffect(() => {
+        document.title = 'Register Course of University';
+    }, []);
     return (
         <div className="h-screen w-full flex items-center justify-cente">
             <div className="bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r p-10 shadow-lg min-h-full md:min-w-0 md:w-1/2">
+                <Link to="/"><i className="fas fa-arrow-alt-circle-left text-gray-400 mr-2"></i></Link>
                 <h1 className="text-4xl font-bold mb-2 text-center text-white">REGISTER</h1>
                 <div className="space-y-4 mt-8">
                     {/*First Name*/}
